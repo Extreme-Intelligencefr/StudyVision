@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0D1B2A;
+  --indigo: #6C63FF;
+  --sky: #38BDF8;
+  --coral: #FF6B6B;
+  --mint: #22C55E;
+  --amber: #F59E0B;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0D1B2A;
+  color: #F0F4FF;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Sora', sans-serif;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #6C63FF 0%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #6C63FF 0%, #38BDF8 100%);
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-light {
+  background: rgba(108, 99, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(108, 99, 255, 0.25);
+  border-color: rgba(108, 99, 255, 0.4);
+}
+
+.glow {
+  box-shadow: 0 0 40px rgba(108, 99, 255, 0.3);
+}
+
+.glow-blue {
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.3);
+}
+
+/* Prose styles for markdown output */
+.prose-studyvision h1,
+.prose-studyvision h2,
+.prose-studyvision h3 {
+  font-family: 'Sora', sans-serif;
+  color: #38BDF8;
+  margin: 1.5rem 0 0.75rem;
+}
+.prose-studyvision p {
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+.prose-studyvision ul, .prose-studyvision ol {
+  padding-left: 1.5rem;
+  color: #cbd5e1;
+}
+.prose-studyvision li {
+  margin-bottom: 0.4rem;
+}
+.prose-studyvision strong {
+  color: #F0F4FF;
+  font-weight: 600;
+}
+.prose-studyvision code {
+  background: rgba(108, 99, 255, 0.15);
+  border: 1px solid rgba(108, 99, 255, 0.3);
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 0.85em;
+  color: #38BDF8;
+}
+.prose-studyvision pre {
+  background: rgba(0,0,0,0.4);
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.25rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+.prose-studyvision pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #e2e8f0;
+  font-size: 0.875rem;
+}
+.prose-studyvision table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.prose-studyvision th {
+  background: rgba(108, 99, 255, 0.2);
+  padding: 0.6rem 1rem;
+  text-align: left;
+  font-family: 'Sora', sans-serif;
+  font-size: 0.85rem;
+  color: #38BDF8;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+}
+.prose-studyvision td {
+  padding: 0.6rem 1rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #cbd5e1;
+  font-size: 0.875rem;
+}
+.prose-studyvision tr:nth-child(even) td {
+  background: rgba(255,255,255,0.02);
+}
+.prose-studyvision hr {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 1.5rem 0;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0D1B2A; }
+::-webkit-scrollbar-thumb { background: #6C63FF; border-radius: 3px; }
